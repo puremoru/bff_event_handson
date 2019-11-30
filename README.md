@@ -136,6 +136,29 @@ export default {
 </script>
 ```
 
+上記のlogin.vueでエラーが出る人は
+```js
+// page/login.vue
+
+<template>
+  <div>
+    <button @click="loginWithAuthZero">Auth0でログイン</button>
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    loginWithAuthZero: function () {
+      this.$auth.loginWith('auth0')
+    }
+  }
+}
+</script>
+```
+
+こちらも試してみてください。
+
 ```js
 // page/callback.vue
 
