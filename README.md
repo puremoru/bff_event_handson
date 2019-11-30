@@ -114,7 +114,7 @@ Auth0のページにアクセスして、アカウントを作成すると、cli
 ```
 
 ```js
-// page/loging.vue
+// page/login.vue
 
 <template>
   <el-container>
